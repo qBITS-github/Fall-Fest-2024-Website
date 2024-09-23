@@ -23,7 +23,7 @@ function Home() {
             background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${qffimg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: '100vh',
+            minHeight: '90vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
@@ -38,7 +38,7 @@ function Home() {
             >
               <div class="d-flex">
               <div className="col-sm-12 col-md-12" style={{
-                    minHeight: "500px",
+                    minHeight: "100px",
                     display: "flex",
                     flexDirection: "column",
                     //justifyContent: "center", // Center vertically
