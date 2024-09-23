@@ -25,6 +25,21 @@ let NavWithoutDropDown = ({link, showname}) => {
 		</li>
 	)
 }
+let NavWithoutDropDownLinked = ({link, showname}) => {
+	return (
+		<li class="nav-item">
+				  <a
+		href={link}
+		style={{ fontWeight: '400' }}
+		className="dropdown-item"
+		target="_blank" // Opens link in a new tab
+		rel="noopener noreferrer" // Security measure
+	  >
+		{showname}
+	  </a>
+		</li>
+	)
+}
 
 let DropDownItem = ({link, showname}) => {
 	return (
@@ -81,7 +96,7 @@ function MyNavbar() {
 						<NavWithoutDropDown link={"/speakers"} showname={"Speakers"}  />
 				
 				
-						<NavWithoutDropDown link={"/registration"} showname={"Registration"}  />
+						<NavWithoutDropDownLinked link={"https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"} showname={"Registration"}  />
 
 						<NavWithDropDown name="Venue" >
 							<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
