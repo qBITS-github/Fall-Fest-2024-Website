@@ -13,7 +13,7 @@ import qfflogo from "../images/Sponsored/Fall Fest.jpg";
 import { ListGroup } from "react-bootstrap";
 
 const homepg_text =
-  ", a well-known all-India Institute for higher education. In keeping with the tradition of innovation and creativity, a state-of-the-art touch is given to the infrastructure of the entire institute without diminishing, in the least, the natural beauty of Goa surrounding the campus. Spacious labs, classrooms with soundproof acoustics, modern furniture, library and computer labs with internet facility define the infrastructural counters of the institution.";
+  "Qiskit Fall Fest is a collection of quantum computing events that invites students, researchers and industry professionals around the world to participate in a wide array of quantum-themed activities, ranging from quantum challenges, hackathons, and coding competitions to workshops, social events, and more. With each Qiskit Fall Fest, we partner with a select group of university students and other volunteer hosts to help them plan and run the global roster of Fall Fest events. This year's event theme, World of Quantum, celebrates the international scope of the event series and the rapid growth of the global quantum community.";
 const homepg_text2 =
   "Our Quantum Computing Club is dedicated to pushing the boundaries of what’s possible in computing. We actively participate in hackathons, discuss research papers, and organize a range of events throughout the year. Our signature event, the Qiskit Fall Fest, features engaging hackathons, coding challenges, and insightful talks from experts in the field. Whether you’re a seasoned coder or just curious about quantum mechanics, or don’t care at all about physics and computer science our community offers opportunities to learn, collaborate, and innovate and MOST IMPORTANTLY HAVE LOADS OF FUN!!!!!"
 function Home() {
@@ -192,7 +192,7 @@ function Home() {
         </div>
       </div>
 
-      <div class="container my-5 py-0">
+      {/*<div class="container my-5 py-0">
         <div class="row  justify-content-center align-middle">
           <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
@@ -233,7 +233,7 @@ function Home() {
             <img src={BITSDClassroom} alt="" class="img-fluid" />
           </div>
         </div>
-      </div>
+      </div>*/}
 
       <div class="container py-4 my-5">
         <div class="row justify-content-center">
