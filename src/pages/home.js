@@ -19,9 +19,19 @@ const homepg_text2 =
 function Home() {
   return (
     <div>
-      <div class="container">
-        <div class="row align-items-around">
-          <div class="col-sm-12 col-md-7">
+      <div style={{ 
+            background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${qffimg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+        
+      }}>
+      <div class="container" >
+        <div  >
+          <div class="col-sm-12 col-md-7" >
             <div
               class="p-4"
               style={{
@@ -57,11 +67,11 @@ function Home() {
                 </a> */}
                 <a
                   download
-                  href="documents/CTCPB_2025.pdf"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"
                   class="black-button m-1"
                 >
                   {" "}
-                  Schedule <i class="fa fa-download" aria-hidden="true"></i>
+                  Register Now! <i  aria-hidden="true"></i>
                 </a>
               </div>
               <div class="d-flex" style={{ textAlign: "start" }}>
@@ -70,23 +80,10 @@ function Home() {
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-flex justify-content-center">
-            <div
-              class="d-flex align-items-center"
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignSelf: "auto",
-              }}
-            >
-              <img
-                src={qffimg}
-                alt="qffimg"
-                style={{ paddingBottom: "200px" }}
-                class="img-fluid"
-              />
-            </div>
+           
           </div>
         </div>
+      </div>
       </div>
 
       <Timer />
