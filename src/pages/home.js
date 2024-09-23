@@ -31,32 +31,38 @@ function Home() {
       }}>
       <div class="container" >
         <div  >
-          <div class="col-sm-12 col-md-7" >
+          <div class="col-sm-12 col-md-12" >
             <div
               class="p-4"
-              style={{
-                minHeight: "500px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-around",
-                alignSelf: "center",
-              }}
+              
             >
               <div class="d-flex">
-               <div className="d-flex">
+              <div className="col-sm-12 col-md-12" style={{
+                    minHeight: "500px",
+                    display: "flex",
+                    flexDirection: "column",
+                    //justifyContent: "center", // Center vertically
+                    alignItems: "center", // Center horizontally
+                   }}>
                   <h1
                     style={{
-                      textAlign: "start",
+                      textAlign: "center",
                       fontWeight: "400",
-                      color: "grey",
+                      color: "white",
                       padding: "20px",
+                      alignItems: 'center',
                     }}
                   >
-                    IBM Qiskit Fall Fest 2024
+                    Qiskit Fall Fest 2024
                   </h1>
                 </div>
               </div>
-              <div class="d-flex-inline" style={{ textAlign: "start" }}>
+              <div class="d-flex-inline" style={{
+                    minHeight: "50px",
+                    display: "flex",
+                    flexDirection: "column",
+                    //justifyContent: "center", // Center vertically
+                    alignItems: "center",}}>
                 {/* <a
                   download
                   href="documents/CTCPB_2025.pdf"
@@ -79,9 +85,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-5 d-flex justify-content-center">
-           
-          </div>
+          
         </div>
       </div>
       </div>
