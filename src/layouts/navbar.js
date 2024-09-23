@@ -31,7 +31,19 @@ let DropDownItem = ({link, showname}) => {
 		<Link style={{fontWeight: '400'}} class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" to={link}>{showname}</Link>
 	)
 }
-
+let ExternalDropDownItem = ({ link, showname }) => {
+	return (
+	  <a
+		href={link}
+		style={{ fontWeight: '400' }}
+		className="dropdown-item"
+		target="_blank" // Opens link in a new tab
+		rel="noopener noreferrer" // Security measure
+	  >
+		{showname}
+	  </a>
+	);
+  };
 function MyNavbar() {
 
 	return (
@@ -61,21 +73,16 @@ function MyNavbar() {
 				
 						<NavWithDropDown name="  About  ">
 							<DropDownItem link={"/about/bitspilani"} showname={"University"} />
-							<DropDownItem link={"qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
+							<ExternalDropDownItem link={"https://qbitsbpgc.wordpress.com/"} showname={"qBITS-bpgc"} />
 						</NavWithDropDown>
 				
-						<NavWithoutDropDown link={"/sponsorship"} showname={"Sponsors"}  />
+					
 				
 						<NavWithoutDropDown link={"/speakers"} showname={"Speakers"}  />
 				
 				
 						<NavWithoutDropDown link={"/registration"} showname={"Registration"}  />
-				
-							<NavWithDropDown name="Past Events">
-								<DropDownItem link={""} showname={"CTCPB 2023"} />
-								<DropDownItem link={""} showname={"CTCPB 2021"} />
-							</NavWithDropDown>
-				
+
 						<NavWithDropDown name="Venue" >
 							<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
 							<DropDownItem link={"/venue/howtoreach"} showname={"How to reach?"} />
